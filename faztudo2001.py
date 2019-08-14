@@ -66,4 +66,4 @@ async def on_message(message):
             await CastMagia(message)
         
 
-client.run('NjA5OTIyOTMxNDg0NTI0NTQ0.XU9ybQ.zeFG_qlROlnL4092BQId1zCJ4pg')
+client.run('your token here')
