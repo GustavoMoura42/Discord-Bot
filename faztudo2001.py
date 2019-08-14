@@ -11,9 +11,9 @@ async def RegistraMagia(message):
         variavel=literal_eval(le.read())
     msgr=message.content.lower().replace("!r","").split()
     #adiciona valor na variavel correspondente ao txt
-    #msg[0]= nome da magia;
-    #msg[-2]= dado da magia;
-    #msg[-1]= quantidade de dados
+    #msgr[0]= nome da magia;
+    #msgr[-2]= dado da magia;
+    #msgr[-1]= quantidade de dados
     variavel[" ".join(msgr[0:-2])]=f'{msgr[-2]} {msgr[-1]}'
     #escreve o valor da variavel no txt
     with open ('testetxt', 'w') as escreve:
