@@ -26,20 +26,20 @@ async def CastMagia(message):
         variavel=literal_eval(le.read())
 
     #recebe os valores da chave em '[]'
-    variavel=variavel[message.content.lower().replace("!cast","").strip()]
+    valores=variavel[message.content.lower().replace("!cast","").strip()]
 
-    variavel=variavel.split()
-    await RollDice(message,variavel,True)
+    valores=valores.split()
+    await RollDice(message,valores,True)
     
 async def CharlieBrown(message):
     await message.channel.send('brown'+message.content.lower().replace("charlie","").replace("!",""))
 
-async def RollDice(message, variavel, flag=False):
+async def RollDice(message, valores, flag=False):
     #lista[0]=tipo de dado
     #lista[1]=vezes a rolar
     resul=[]
     if flag:
-        lista=variavel
+        lista=valores
     else:
         lista=message.content.lower().replace("!d","").split()
     for x in range(int(lista[1])):
