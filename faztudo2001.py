@@ -34,7 +34,7 @@ async def CastMagia(message):
 async def CharlieBrown(message):
     await message.channel.send('brown'+message.content.lower().replace("charlie","").replace("!",""))
 
-async def RollDice(message, valores, flag=False):
+async def RollDice(message=None, valores=None, flag=False):
     #lista[0]=tipo de dado
     #lista[1]=vezes a rolar
     resul=[]
